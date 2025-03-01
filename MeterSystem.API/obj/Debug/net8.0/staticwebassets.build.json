@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "scs6YjXGmESh597w3ikBXM2pEM9c6kDu5FMojSgeMIk=",
+  "Source": "MeterSystem.API",
+  "BasePath": "_content/MeterSystem.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

@@ -1,0 +1,73 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projects\\CQRSPatternDemo\\MeterSystem.API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC59EE8-8B83-4E34-8C3A-511E6E26EEB6}|..\\MeterSystem.Application\\MeterSystem.Application.csproj|d:\\projects\\cqrspatterndemo\\metersystem.application\\metersystem.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{ED49A768-89D2-4CF3-ABB7-260234073430}|..\\MeterSystem.Infrastructure\\MeterSystem.Infrastructure.csproj|d:\\projects\\cqrspatterndemo\\metersystem.infrastructure\\metersystem.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{696996CC-AEC0-4894-B051-AA5657EB9ABB}|MeterSystem.API.csproj|d:\\projects\\cqrspatterndemo\\metersystem.api\\metersystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{696996CC-AEC0-4894-B051-AA5657EB9ABB}|MeterSystem.API.csproj|solutionrelative:metersystem.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MeterSystem.Application",
+              "DocumentMoniker": "D:\\Projects\\CQRSPatternDemo\\MeterSystem.Application\\MeterSystem.Application.csproj",
+              "RelativeDocumentMoniker": "..\\MeterSystem.Application\\MeterSystem.Application.csproj",
+              "ToolTip": "D:\\Projects\\CQRSPatternDemo\\MeterSystem.Application\\MeterSystem.Application.csproj",
+              "RelativeToolTip": "..\\MeterSystem.Application\\MeterSystem.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-28T16:56:54.462Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MeterSystem.Infrastructure",
+              "DocumentMoniker": "D:\\Projects\\CQRSPatternDemo\\MeterSystem.Infrastructure\\MeterSystem.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "..\\MeterSystem.Infrastructure\\MeterSystem.Infrastructure.csproj",
+              "ToolTip": "D:\\Projects\\CQRSPatternDemo\\MeterSystem.Infrastructure\\MeterSystem.Infrastructure.csproj",
+              "RelativeToolTip": "..\\MeterSystem.Infrastructure\\MeterSystem.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-28T16:55:44.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MeterSystem.API",
+              "DocumentMoniker": "D:\\Projects\\CQRSPatternDemo\\MeterSystem.API\\MeterSystem.API.csproj",
+              "RelativeDocumentMoniker": "MeterSystem.API.csproj",
+              "ToolTip": "D:\\Projects\\CQRSPatternDemo\\MeterSystem.API\\MeterSystem.API.csproj",
+              "RelativeToolTip": "MeterSystem.API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-02-28T16:53:56.968Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

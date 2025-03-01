@@ -1,0 +1,17 @@
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\bin\Debug\net8.0\MeterSystem.Application.deps.json
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\bin\Debug\net8.0\MeterSystem.Application.dll
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\bin\Debug\net8.0\MeterSystem.Application.pdb
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\bin\Debug\net8.0\MeterSystem.Domain.dll
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\bin\Debug\net8.0\MeterSystem.Infrastructure.dll
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\bin\Debug\net8.0\MeterSystem.Domain.pdb
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\bin\Debug\net8.0\MeterSystem.Infrastructure.pdb
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\obj\Debug\net8.0\MeterSystem.Application.csproj.AssemblyReference.cache
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\obj\Debug\net8.0\MeterSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\obj\Debug\net8.0\MeterSystem.Application.AssemblyInfoInputs.cache
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\obj\Debug\net8.0\MeterSystem.Application.AssemblyInfo.cs
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\obj\Debug\net8.0\MeterSystem.Application.csproj.CoreCompileInputs.cache
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\obj\Debug\net8.0\MeterSys.A4BEA7B2.Up2Date
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\obj\Debug\net8.0\MeterSystem.Application.dll
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\obj\Debug\net8.0\refint\MeterSystem.Application.dll
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\obj\Debug\net8.0\MeterSystem.Application.pdb
+D:\Projects\CQRSPatternDemo\MeterSystem.Application\obj\Debug\net8.0\ref\MeterSystem.Application.dll
