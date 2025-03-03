@@ -1,0 +1,34 @@
+[
+  {
+    "ContainingType": "MeterSystem.API.Controllers.ConsumptionController",
+    "Method": "Create",
+    "RelativePath": "api/Consumption",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "MeterSystem.Application.Commands.Requests.AddConsumptionCommandRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MeterSystem.API.Controllers.ConsumptionController",
+    "Method": "Get",
+    "RelativePath": "api/Consumption/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

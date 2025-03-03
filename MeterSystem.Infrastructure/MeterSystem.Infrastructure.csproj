@@ -17,4 +17,8 @@
     <ProjectReference Include="..\MeterSystem.Domain\MeterSystem.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
 </Project>

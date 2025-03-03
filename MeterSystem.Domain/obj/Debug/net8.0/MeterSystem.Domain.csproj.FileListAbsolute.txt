@@ -10,3 +10,4 @@ D:\Projects\CQRSPatternDemo\MeterSystem.Domain\obj\Debug\net8.0\MeterSystem.Doma
 D:\Projects\CQRSPatternDemo\MeterSystem.Domain\obj\Debug\net8.0\refint\MeterSystem.Domain.dll
 D:\Projects\CQRSPatternDemo\MeterSystem.Domain\obj\Debug\net8.0\MeterSystem.Domain.pdb
 D:\Projects\CQRSPatternDemo\MeterSystem.Domain\obj\Debug\net8.0\ref\MeterSystem.Domain.dll
+D:\Projects\CQRSPatternDemo\MeterSystem.Domain\obj\Debug\net8.0\MeterSystem.Domain.sourcelink.json

@@ -23,11 +23,11 @@ namespace MeterSystem.Application.Handlers
             _mapper = mapper;
         }
 
-        public Task<AddConsumptionCommandResponse> Handle(AddConsumptionCommandRequest request, CancellationToken cancellationToken)
+        public async Task<AddConsumptionCommandResponse> Handle(AddConsumptionCommandRequest request, CancellationToken cancellationToken)
         {
             var consumption = _mapper.Map<Consumption>(request);
-            var newConsumption = _consumptionRepository.Create(consumption);
-            return Task.FromResult(_mapper.Map<AddConsumptionCommandResponse>(newConsumption));
+            var newConsumption = await _consumptionRepository.Create(consumption);
+            return await Task.FromResult(_mapper.Map<AddConsumptionCommandResponse>(newConsumption));
         }
     }
 }

@@ -13,11 +13,7 @@ namespace MeterSystem.Infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Consumption>()
-                .HasKey(c => c.Id);
-
-            modelBuilder.Entity<Consumption>()
-                .HasIndex(c => c.CreatedAt)
-                .HasAnnotation("Npgsql:IndexName", "idx_created_at");
+                .HasKey(c => new { c.CreatedAt, c.Id });
         }
 
         public void EnsureHyperTable()

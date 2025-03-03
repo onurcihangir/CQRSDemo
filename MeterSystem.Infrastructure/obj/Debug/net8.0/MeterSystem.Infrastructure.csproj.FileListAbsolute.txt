@@ -13,3 +13,4 @@ D:\Projects\CQRSPatternDemo\MeterSystem.Infrastructure\obj\Debug\net8.0\MeterSys
 D:\Projects\CQRSPatternDemo\MeterSystem.Infrastructure\obj\Debug\net8.0\refint\MeterSystem.Infrastructure.dll
 D:\Projects\CQRSPatternDemo\MeterSystem.Infrastructure\obj\Debug\net8.0\MeterSystem.Infrastructure.pdb
 D:\Projects\CQRSPatternDemo\MeterSystem.Infrastructure\obj\Debug\net8.0\ref\MeterSystem.Infrastructure.dll
+D:\Projects\CQRSPatternDemo\MeterSystem.Infrastructure\obj\Debug\net8.0\MeterSystem.Infrastructure.sourcelink.json

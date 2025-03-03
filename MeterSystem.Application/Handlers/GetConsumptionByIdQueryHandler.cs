@@ -22,11 +22,11 @@ namespace ConsumptionService.Application.Handlers
             _mapper = mapper;
         }
 
-        public Task<GetConsumptionByIdQueryResponse> Handle(GetConsumptionByIdQueryRequest request, CancellationToken cancellationToken)
+        public async Task<GetConsumptionByIdQueryResponse> Handle(GetConsumptionByIdQueryRequest request, CancellationToken cancellationToken)
         {
-            var consumption = _consumptionRepository.GetById(request.Id);
+            var consumption = await _consumptionRepository.GetById(request.Id);
             var mapConsumption = _mapper.Map<GetConsumptionByIdQueryResponse>(consumption);
-            return Task.FromResult(mapConsumption);
+            return await Task.FromResult(mapConsumption);
         }
     }
 }

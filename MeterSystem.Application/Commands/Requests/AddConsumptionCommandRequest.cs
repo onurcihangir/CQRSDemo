@@ -12,6 +12,6 @@ namespace MeterSystem.Application.Commands.Requests
     {
         public required string ProductCode { get; set; }
         public double Value { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
 }
