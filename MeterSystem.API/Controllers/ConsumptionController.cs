@@ -19,6 +19,7 @@ namespace MeterSystem.API.Controllers
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
+            Task.Delay(4000).Wait(); // for ocelot caching test
             return Ok(await _mediator.Send(new GetConsumptionByIdQueryRequest { Id = id }));
         }
 

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterSystem.Domain", "..\Me
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterSystem.Infrastructure", "..\MeterSystem.Infrastructure\MeterSystem.Infrastructure.csproj", "{ED49A768-89D2-4CF3-ABB7-260234073430}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterSystem.APIGateway", "..\MeterSystem.APIGateway\MeterSystem.APIGateway.csproj", "{489F92C1-879C-46B2-80A0-8EC3C0EF1679}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{ED49A768-89D2-4CF3-ABB7-260234073430}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED49A768-89D2-4CF3-ABB7-260234073430}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED49A768-89D2-4CF3-ABB7-260234073430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489F92C1-879C-46B2-80A0-8EC3C0EF1679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489F92C1-879C-46B2-80A0-8EC3C0EF1679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489F92C1-879C-46B2-80A0-8EC3C0EF1679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489F92C1-879C-46B2-80A0-8EC3C0EF1679}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
