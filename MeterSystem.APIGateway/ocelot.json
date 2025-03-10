@@ -11,6 +11,7 @@
       ],
       "UpstreamPathTemplate": "/Consumption/{everything}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "SwaggerKey": "consumptions",
       // Caching
       "FileCacheOptions": {
         "TtlSeconds": 60,
@@ -26,6 +27,18 @@
         "PeriodTimespan": 1,
         "Limit": 1
       }
+    }
+  ],
+  "SwaggerEndPoints": [
+    {
+      "Key": "consumptions",
+      "Config": [
+        {
+          "Name": "Consumptions API",
+          "Version": "v1",
+          "Url": "http://localhost:5152/swagger/v1/swagger.json"
+        }
+      ]
     }
   ],
   "GlobalConfiguration": {
