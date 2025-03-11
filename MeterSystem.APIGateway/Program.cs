@@ -1,3 +1,4 @@
+using MeterSystem.APIGateway.Aggregators;
 using Ocelot.Cache.CacheManager;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
@@ -15,7 +16,8 @@ builder.Services
     .AddCacheManager(x =>
     {
         x.WithDictionaryHandle();
-    });
+    })
+    .AddSingletonDefinedAggregator<ConsumptionTestAggregator>();
 
 var app = builder.Build();
 

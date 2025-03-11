@@ -1,7 +1,7 @@
 {
   "Routes": [
     {
-      "DownstreamPathTemplate": "/api/Consumption/{everything}",
+      "DownstreamPathTemplate": "/api/Consumption/{id}",
       "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
@@ -9,13 +9,14 @@
           "Port": 5152
         }
       ],
-      "UpstreamPathTemplate": "/Consumption/{everything}",
+      "UpstreamPathTemplate": "/Consumption/{id}",
       "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
-      "SwaggerKey": "consumptions",
+      "Key": "Consumption",
+      "SwaggerKey": "Consumption",
       // Caching
       "FileCacheOptions": {
         "TtlSeconds": 60,
-        "Region": "default",
+        "Region": "consumption",
         "Header": "OC-Caching-Control",
         "EnableContentHashing": false
       },
@@ -23,20 +24,69 @@
       "RateLimitOptions": {
         "ClientWhitelist": [],
         "EnableRateLimiting": true,
-        "Period": "3s",
+        "Period": "10s",
         "PeriodTimespan": 1,
-        "Limit": 1
+        "Limit": 5
       }
+    },
+    {
+      "DownstreamPathTemplate": "/api/Test/{id}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "localhost",
+          "Port": 5221
+        }
+      ],
+      "UpstreamPathTemplate": "/Test/{id}",
+      "UpstreamHttpMethod": [ "GET", "POST", "PUT", "DELETE" ],
+      "Key": "Test",
+      "SwaggerKey": "Test",
+      // Caching
+      "FileCacheOptions": {
+        "TtlSeconds": 60,
+        "Region": "test",
+        "Header": "OC-Caching-Control",
+        "EnableContentHashing": false
+      },
+      // Rate Limiting
+      "RateLimitOptions": {
+        "ClientWhitelist": [],
+        "EnableRateLimiting": true,
+        "Period": "10s",
+        "PeriodTimespan": 1,
+        "Limit": 5
+      }
+    }
+  ],
+  "Aggregates": [
+    {
+      "RouteKeys": [
+        "Consumption",
+        "Test"
+      ],
+      "UpstreamPathTemplate": "/ConsumptionAndTest/{id}",
+      "Aggregator": "ConsumptionTestAggregator"
     }
   ],
   "SwaggerEndPoints": [
     {
-      "Key": "consumptions",
+      "Key": "Consumption",
       "Config": [
         {
           "Name": "Consumptions API",
           "Version": "v1",
           "Url": "http://localhost:5152/swagger/v1/swagger.json"
+        }
+      ]
+    },
+    {
+      "Key": "Test",
+      "Config": [
+        {
+          "Name": "Second API",
+          "Version": "v1",
+          "Url": "http://localhost:5221/swagger/v1/swagger.json"
         }
       ]
     }
