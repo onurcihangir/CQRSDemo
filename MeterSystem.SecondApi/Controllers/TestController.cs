@@ -19,7 +19,7 @@ namespace MeterSystem.SecondApi.Controllers
         [HttpGet("{id}")]
         public IActionResult GetById(int id)
         {
-            return Ok(new { Message = $"İstenen ID: {id}" });
+            return Ok(new TestModel { Id = id, Name = "Test" });
         }
 
         // POST: api/test
