@@ -9,6 +9,7 @@ A .NET-based metering system that implements CQRS pattern with TimescaleDB for t
 - Generic Repository pattern
 - Robust error handling and validation
 - Comprehensive API documentation
+- API Gateway options with Ocelot and GraphQL
 
 ## 🛠 Technologies & Patterns
 
@@ -18,6 +19,8 @@ A .NET-based metering system that implements CQRS pattern with TimescaleDB for t
 - **MediatR** - For CQRS implementation
 - **AutoMapper** - For object mapping
 - **Swagger/OpenAPI** - API documentation
+- **Ocelot** - API Gateway
+- **GraphQL** - API Gateway
 
 ## 🏗 Architecture
 
@@ -27,6 +30,8 @@ The solution follows Clean Architecture principles with these layers:
 - **MeterSystem.Application** - Application logic, CQRS handlers
 - **MeterSystem.Domain** - Domain entities and interfaces
 - **MeterSystem.Infrastructure** - Data access and external services
+- **MeterSystem.APIGateway** - API Gateway using Ocelot
+- **GraphQL.Gateway** - API Gateway using GraphQL
 
 ## 🚦 Getting Started
 
@@ -98,6 +103,7 @@ TimescaleDB kullanarak zaman serisi verilerini yöneten CQRS desenini uygulayan 
 - Generic Repository deseni
 - Güçlü hata yönetimi ve doğrulama mekanizması
 - Kapsamlı API dokümantasyonu
+- Ocelot ve GraphQL ile API Gateway opsiyonları
 
 ## 🛠 Teknolojiler & Desenler
 
@@ -107,6 +113,8 @@ TimescaleDB kullanarak zaman serisi verilerini yöneten CQRS desenini uygulayan 
 - **MediatR** - CQRS uygulamaları için
 - **AutoMapper** - Nesne dönüşümü için
 - **Swagger/OpenAPI** - API dokümantasyonu
+- **Ocelot** - API Gateway
+- **GraphQL** - API Gateway
 
 ## 🏗 Mimari
 
@@ -116,6 +124,8 @@ Bu çözüm, Clean Architecture prensiplerini takip eder ve şu katmanlara sahip
 - **MeterSystem.Application** - Uygulama mantığı ve CQRS işleyicileri
 - **MeterSystem.Domain** - Alan (Domain) varlıkları ve arayüzler
 - **MeterSystem.Infrastructure** - Veri erişimi ve harici servisler
+- **MeterSystem.APIGateway** - Ocelot API Gateway 
+- **GraphQL.Gateway** - GraphQL API Gateway
 
 ## 🚦 Başlangıç
 
