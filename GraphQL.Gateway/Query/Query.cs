@@ -1,4 +1,5 @@
 ﻿using GraphQL.Gateway.Model;
+using MeterSystem.Application.Queries.Responses;
 using MeterSystem.Domain.Entities;
 using MeterSystem.SecondApi.Controllers;
 
@@ -9,8 +10,8 @@ namespace GraphQL.Gateway.Query
         [GraphQLName("aggregatedData")]
         public async Task<AggregatedData> GetAggregatedDataAsync(
             [Service] IHttpClientFactory httpClientFactory,
-            int consumptionId,
-            int testId)
+            [GraphQLDescription("consumptionId")] int consumptionId,
+            [GraphQLDescription("testId")] int testId)
         {
             var consumptionClient = httpClientFactory.CreateClient("ConsumptionService");
             var testClient = httpClientFactory.CreateClient("TestService");
@@ -41,6 +42,35 @@ namespace GraphQL.Gateway.Query
                     Consumption = consumption,
                     Test = test
                 };
+            }
+            catch (Exception ex)
+            {
+                // Better logging can be added here
+                throw new GraphQLException(
+                    ErrorBuilder.New()
+                        .SetMessage("Error when fetching data: " + ex.Message)
+                        .Build());
+            }
+        }
+
+        [GraphQLName("product")]
+        public async Task<GetProductByIdQueryResponse> GetProductAsync(
+            [Service] IHttpClientFactory httpClientFactory,
+            [GraphQLDescription("consumptionId")] int productId)
+        {
+            var consumptionClient = httpClientFactory.CreateClient("ConsumptionService");
+
+            try
+            {
+                var consumptionTask = await consumptionClient.GetAsync($"api/Product/{productId}");
+
+                // Better logging can be added here
+                if (!consumptionTask.IsSuccessStatusCode)
+                    throw new Exception($"Error on Consumption Service: {consumptionTask.StatusCode}");
+
+                var product = await consumptionTask.Content.ReadFromJsonAsync<GetProductByIdQueryResponse>();
+
+                return product ?? throw new Exception("No Product Data!");
             }
             catch (Exception ex)
             {

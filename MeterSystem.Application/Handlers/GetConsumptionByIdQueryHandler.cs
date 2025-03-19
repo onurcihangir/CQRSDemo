@@ -10,7 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsumptionService.Application.Handlers
+namespace MeterSystem.Application.Handlers
 {
     public class GetConsumptionByIdQueryHandler : IRequestHandler<GetConsumptionByIdQueryRequest, GetConsumptionByIdQueryResponse>
     {

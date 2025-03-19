@@ -1,3 +1,4 @@
+using GraphQL.Gateway.Mutation;
 using GraphQL.Gateway.Query;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,8 +15,8 @@ builder.Services.AddHttpClient("TestService", client =>
 
 builder.Services
     .AddGraphQLServer()
-    .AddQueryType<Query>();
-
+    .AddQueryType<Query>()
+    .AddMutationType<Mutation>();
 
 var app = builder.Build();
 

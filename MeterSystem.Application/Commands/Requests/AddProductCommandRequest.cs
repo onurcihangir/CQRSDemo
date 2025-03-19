@@ -8,9 +8,8 @@ using System.Threading.Tasks;
 
 namespace MeterSystem.Application.Commands.Requests
 {
-    public class AddConsumptionCommandRequest : IRequest<AddConsumptionCommandResponse>
+    public class AddProductCommandRequest : IRequest<AddProductCommandResponse>
     {
-        public required string ProductCode { get; set; }
-        public double Value { get; set; }
+        public required string Code { get; set; }
     }
 }

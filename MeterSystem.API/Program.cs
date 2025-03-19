@@ -19,6 +19,7 @@ builder.Services.AddDbContext<PostgreDbContext>(db =>
     db.UseNpgsql(builder.Configuration.GetConnectionString("DbConnectionString"), options => options.MigrationsAssembly("MeterSystem.Infrastructure")));
 
 builder.Services.AddScoped<IConsumptionRepository, ConsumptionRepository>();
+builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 
 var config = new MapperConfiguration(conf =>
