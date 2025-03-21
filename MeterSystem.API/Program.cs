@@ -20,6 +20,7 @@ builder.Services.AddDbContext<PostgreDbContext>(db =>
 
 builder.Services.AddScoped<IConsumptionRepository, ConsumptionRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 
 var config = new MapperConfiguration(conf =>

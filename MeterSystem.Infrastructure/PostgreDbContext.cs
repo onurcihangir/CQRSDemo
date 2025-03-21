@@ -10,12 +10,15 @@ namespace MeterSystem.Infrastructure
         public PostgreDbContext(DbContextOptions<PostgreDbContext> options) : base(options) { }
         public DbSet<Consumption> Consumptions { get; set; }
         public DbSet<Product> Products { get; set; }
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Consumption>()
                 .HasKey(c => new { c.CreatedAt, c.Id });
             modelBuilder.Entity<Product>()
+                .HasKey(c => new { c.CreatedAt, c.Id });
+            modelBuilder.Entity<User>()
                 .HasKey(c => new { c.CreatedAt, c.Id });
 
             modelBuilder.Entity<Consumption>()

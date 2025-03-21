@@ -15,10 +15,16 @@ namespace CqrsMediatR.Mapper
             CreateMap<Consumption, GetConsumptionByIdQueryResponse>();
             CreateMap<AddConsumptionCommandRequest, Consumption>();
             CreateMap<Consumption, AddConsumptionCommandResponse>();
+
             CreateMap<GetProductByIdQueryRequest, Product>();
             CreateMap<Product, GetProductByIdQueryResponse>();
             CreateMap<AddProductCommandRequest, Product>();
             CreateMap<Product, AddProductCommandResponse>();
+
+            CreateMap<GetUserByIdQueryRequest, User>();
+            CreateMap<User, GetUserByIdQueryResponse>();
+            CreateMap<AddUserCommandRequest, User>();
+            CreateMap<User, AddUserCommandResponse>();
         }
     }
 }

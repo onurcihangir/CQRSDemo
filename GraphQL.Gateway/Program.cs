@@ -1,3 +1,4 @@
+using GraphQL.Gateway.Extensions;
 using GraphQL.Gateway.Mutation;
 using GraphQL.Gateway.Query;
 
@@ -13,10 +14,17 @@ builder.Services.AddHttpClient("TestService", client =>
     client.BaseAddress = new Uri("http://localhost:5221/"); // Test Service API URL
 });
 
+builder.Services.AddHttpClient("ServerServiceAPI", client =>
+{
+    client.BaseAddress = new Uri("http://localhost:5264/"); // Server Service API URL
+});
+
 builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
-    .AddMutationType<Mutation>();
+    .AddMutationType<Mutation>()
+    //.UseAuthorization()
+    .CheckPermissions();
 
 var app = builder.Build();
 

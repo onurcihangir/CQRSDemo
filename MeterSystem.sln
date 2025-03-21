@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterSystem.API", "MeterSystem.API\MeterSystem.API.csproj", "{696996CC-AEC0-4894-B051-AA5657EB9ABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterSystem.Application", "MeterSystem.Application\MeterSystem.Application.csproj", "{2EC59EE8-8B83-4E34-8C3A-511E6E26EEB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterSystem.Domain", "MeterSystem.Domain\MeterSystem.Domain.csproj", "{AE67C60A-E7B8-4098-AB65-C5562AE653F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterSystem.Infrastructure", "MeterSystem.Infrastructure\MeterSystem.Infrastructure.csproj", "{ED49A768-89D2-4CF3-ABB7-260234073430}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterSystem.APIGateway", "MeterSystem.APIGateway\MeterSystem.APIGateway.csproj", "{489F92C1-879C-46B2-80A0-8EC3C0EF1679}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterSystem.SecondApi", "MeterSystem.SecondApi\MeterSystem.SecondApi.csproj", "{B674AFA2-86FF-48B4-A22A-DB938759D7FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphQL.Gateway", "GraphQL.Gateway\GraphQL.Gateway.csproj", "{1A7C18DD-2E15-417E-AD29-F5051B67829A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeterSystem.ServerAPI", "MeterSystem.ServerAPI\MeterSystem.ServerAPI.csproj", "{52543742-65F8-493E-9BE3-A8955700AF3E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{696996CC-AEC0-4894-B051-AA5657EB9ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{696996CC-AEC0-4894-B051-AA5657EB9ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{696996CC-AEC0-4894-B051-AA5657EB9ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{696996CC-AEC0-4894-B051-AA5657EB9ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC59EE8-8B83-4E34-8C3A-511E6E26EEB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC59EE8-8B83-4E34-8C3A-511E6E26EEB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC59EE8-8B83-4E34-8C3A-511E6E26EEB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC59EE8-8B83-4E34-8C3A-511E6E26EEB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE67C60A-E7B8-4098-AB65-C5562AE653F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE67C60A-E7B8-4098-AB65-C5562AE653F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE67C60A-E7B8-4098-AB65-C5562AE653F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE67C60A-E7B8-4098-AB65-C5562AE653F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED49A768-89D2-4CF3-ABB7-260234073430}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED49A768-89D2-4CF3-ABB7-260234073430}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED49A768-89D2-4CF3-ABB7-260234073430}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED49A768-89D2-4CF3-ABB7-260234073430}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489F92C1-879C-46B2-80A0-8EC3C0EF1679}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489F92C1-879C-46B2-80A0-8EC3C0EF1679}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489F92C1-879C-46B2-80A0-8EC3C0EF1679}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489F92C1-879C-46B2-80A0-8EC3C0EF1679}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B674AFA2-86FF-48B4-A22A-DB938759D7FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B674AFA2-86FF-48B4-A22A-DB938759D7FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B674AFA2-86FF-48B4-A22A-DB938759D7FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B674AFA2-86FF-48B4-A22A-DB938759D7FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A7C18DD-2E15-417E-AD29-F5051B67829A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A7C18DD-2E15-417E-AD29-F5051B67829A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A7C18DD-2E15-417E-AD29-F5051B67829A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A7C18DD-2E15-417E-AD29-F5051B67829A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52543742-65F8-493E-9BE3-A8955700AF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52543742-65F8-493E-9BE3-A8955700AF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52543742-65F8-493E-9BE3-A8955700AF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52543742-65F8-493E-9BE3-A8955700AF3E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
