@@ -1,5 +1,7 @@
-﻿using HotChocolate.Resolvers;
+﻿using GraphQL.Gateway.Attributes;
+using HotChocolate.Resolvers;
 using MeterSystem.Application.Queries.Responses;
+using System.Reflection;
 
 namespace GraphQL.Gateway.Middleware
 {
@@ -18,8 +20,8 @@ namespace GraphQL.Gateway.Middleware
 
         public async Task InvokeAsync(IMiddlewareContext context)
         {
-            if (context.ContextData.TryGetValue("RequiredPermission", out var requiredPermission) &&
-                requiredPermission is string permission)
+            var permissionAttribute = context.Selection.Field.ResolverMember?.GetCustomAttribute<RequiresPermissionAttribute>();
+            if (permissionAttribute != null)
             {
                 if (!context.ContextData.TryGetValue("Token", out var tokenObj) || tokenObj is not string token)
                 {
@@ -32,10 +34,10 @@ namespace GraphQL.Gateway.Middleware
 
                 try
                 {
-                    var userClient = _httpClientFactory.CreateClient("UserService");
+                    var userClient = _httpClientFactory.CreateClient("ServerServiceAPI");
                     userClient.DefaultRequestHeaders.Add("Authorization", $"Bearer {token}");
 
-                    var response = await userClient.GetAsync("api/User/");
+                    var response = await userClient.GetAsync("api/User/1");
 
                     if (!response.IsSuccessStatusCode)
                     {
@@ -48,7 +50,7 @@ namespace GraphQL.Gateway.Middleware
 
                     var user = await response.Content.ReadFromJsonAsync<GetUserByIdQueryResponse>();
 
-                    if (user == null || !user.Permissions.Contains(permission))
+                    if (user == null || !user.Permissions.Contains(permissionAttribute.Permission))
                     {
                         context.Result = ErrorBuilder.New()
                             .SetMessage($"No permission to perform this operation")

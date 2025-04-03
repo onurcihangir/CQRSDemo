@@ -1,4 +1,5 @@
-﻿using GraphQL.Gateway.Model;
+﻿using GraphQL.Gateway.Attributes;
+using GraphQL.Gateway.Model;
 using MeterSystem.Application.Queries.Responses;
 using MeterSystem.Domain.Entities;
 using MeterSystem.SecondApi.Controllers;
@@ -54,6 +55,8 @@ namespace GraphQL.Gateway.Query
         }
 
         [GraphQLName("product")]
+        [UseRequiresPermission]
+        [RequiresPermission(PermissionConstants.ViewProduct)]
         public async Task<GetProductByIdQueryResponse> GetProductAsync(
             [Service] IHttpClientFactory httpClientFactory,
             [GraphQLDescription("consumptionId")] int productId)

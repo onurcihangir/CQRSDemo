@@ -40,7 +40,7 @@ namespace GraphQL.Gateway.Middleware
 
                 context.ContextData["Token"] = token;
             }
-
+            context.ContextData["Token"] = "test";
             await _next(context);
         }
     }

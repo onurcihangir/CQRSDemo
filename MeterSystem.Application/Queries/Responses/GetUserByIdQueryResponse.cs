@@ -12,6 +12,6 @@ namespace MeterSystem.Application.Queries.Responses
         public DateTime CreatedAt { get; set; }
         public required string Email { get; set; }
         public required string Password { get; set; }
-        public required string Permissions { get; set; }
+        public required List<string> Permissions { get; set; }
     }
 }

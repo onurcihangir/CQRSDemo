@@ -23,7 +23,7 @@ builder.Services
     .AddGraphQLServer()
     .AddQueryType<Query>()
     .AddMutationType<Mutation>()
-    //.UseAuthorization()
+    .UseAuthorization()
     .CheckPermissions();
 
 var app = builder.Build();
